@@ -176,15 +176,15 @@ cy.visit('/index.html')
 ```
 
 ```js
-cy.mount(<MyComponent />)
+cy.mount(<DatePicker />)
 ```
 
 ```js
-const now = new Date(2017, 3, 14).getTime() // April 14, 2017 timestamp
+const now = new Date(2021, 3, 14).getTime() // March 14, 2021 timestamp
 
 cy.clock(now)
 __VISIT_MOUNT_PLACEHOLDER__
-cy.get('#date').contains('2017-04-14')
+cy.get('#date').contains('2021-03-14')
 ```
 
 :::
